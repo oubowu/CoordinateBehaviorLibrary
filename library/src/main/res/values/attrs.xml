@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScrollBehavior">
+
+        <attr name="scroll_orientation" format="enum">
+            <enum name="horizontal_same" value="1"/>
+            <enum name="horizontal_reverse" value="2"/>
+            <enum name="vertical_same" value="3"/>
+            <enum name="vertical_reverse" value="4"/>
+        </attr>
+
+        <attr name="enable_alpha" format="boolean"/>
+
+        <attr name="enable_scale" format="boolean"/>
+
+        <attr name="enable_translate" format="boolean"/>
+
+        <attr name="enable_smooth_fling" format="boolean"/>
+
+        <attr name="damping" format="float"/>
+
+        <attr name="fling_anim_duration" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DependenceBehavior">
+        <attr name="dependence_id" format="reference"/>
+        <attr name="dependence_scroll_orientation" format="enum">
+            <enum name="horizontal_same" value="1"/>
+            <enum name="horizontal_reverse" value="2"/>
+            <enum name="vertical_same" value="3"/>
+            <enum name="vertical_reverse" value="4"/>
+        </attr>
+        <attr name="relative_to_dependence" format="enum">
+            <enum name="toLeft" value="1"/>
+            <enum name="toRight" value="2"/>
+            <enum name="toTop" value="3"/>
+            <enum name="toBottom" value="4"/>
+            <enum name="alignLeft" value="5"/>
+            <enum name="alignRight" value="6"/>
+            <enum name="alignTop" value="7"/>
+            <enum name="alignBottom" value="8"/>
+            <enum name="follow" value="9"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
